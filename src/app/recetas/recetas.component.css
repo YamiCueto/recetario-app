@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 16px;
+}
+
+.nivel-card, .receta-card {
+  width: 300px;
+}

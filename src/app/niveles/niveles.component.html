@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <span>Recetario por Niveles</span>
+</mat-toolbar>
+
+<div class="container" *ngIf="dataLoaded; else loading">
+  <mat-card *ngFor="let nivel of niveles" class="nivel-card">
+    <h2>{{ nivel.titulo }}</h2>
+    <mat-card-content>
+      <p>{{ nivel.descripcion }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="accent" [routerLink]="['/nivel', nivel.id]">
+        Ver Recetas
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<ng-template #loading>
+  <div class="loading">Cargando datos...</div>
+</ng-template>

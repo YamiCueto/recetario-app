@@ -1,0 +1,282 @@
+{
+    "nivelDos": {
+        "fuerza": {
+            "platos": [
+                {
+                    "nombre": "Surtido de verduras salteadas",
+                    "cantidad": 1,
+                    "ingredientes": [
+                        "Hierba de Hyrule",
+                        "Hoja Kolog",
+                        "Zanahoria",
+                        "Bulbo arpón"
+                    ]
+                }
+            ]
+        },
+        "velocidad": {
+            "platos": [
+                {
+                    "nombre": "Verduras a la parrilla",
+                    "cantidad": 1,
+                    "ingredientes": [
+                        "Zanahoria",
+                        "Halita"
+                    ]
+                }
+            ]
+        },
+        "resistencia": {
+            "platos": [
+                {
+                    "nombre": "Salteado aromático de hierbas",
+                    "cantidad": 1,
+                    "ingredientes": [
+                        "Calabaza",
+                        "Zanahoria",
+                        "Calabaza luminosa",
+                        "Especias goron"
+                    ]
+                }
+            ]
+        },
+        "fuerzaDeTiro": {
+            "platos": [
+                {
+                    "nombre": "Bolas de arroz con verduras",
+                    "cantidad": 2,
+                    "ingredientes": [
+                        "Arroz de Hyrule",
+                        "Hierba de Hyrule"
+                    ]
+                }
+            ]
+        }
+    },
+    "nivelTres": {
+        "fuerza": {
+            "platos": [
+                {
+                    "nombre": "Bolas de arroz con verduras",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Arroz de Hyrule",
+                        "Hierba de Hyrule"
+                    ]
+                },
+                {
+                    "nombre": "Surtido de verduras salteadas",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Hierba de Hyrule",
+                        "Hoja Kolog",
+                        "Zanahoria",
+                        "Bulbo arpón"
+                    ]
+                }
+            ]
+        },
+        "velocidad": {
+            "platos": [
+                {
+                    "nombre": "Verduras Confitadas",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Cebolla vigorina",
+                        "Miel de abeja"
+                    ]
+                },
+                {
+                    "nombre": "Salteado de tomates al vapor",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Tomates Hylianos",
+                        "Hierba de Hyrule",
+                        "Zanahoria",
+                        "Cebolla vigorina"
+                    ]
+                }
+            ]
+        },
+        "resistencia": {
+            "platos": [
+                {
+                    "nombre": "Manzanas a la miel",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Miel de vigor",
+                        "Manzana"
+                    ]
+                },
+                {
+                    "nombre": "Arroz cremoso con verduras",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Arroz",
+                        "Leche",
+                        "Zanahoria"
+                    ]
+                }
+            ]
+        },
+        "fuerzaDeTiro": {
+            "platos": [
+                {
+                    "nombre": "Surtido de verduras salteadas",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Hierba de Hyrule",
+                        "Hoja Kolog",
+                        "Zanahoria",
+                        "Bulbo arpón"
+                    ]
+                },
+                {
+                    "nombre": "Arroz cremoso con verduras",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Arroz",
+                        "Leche",
+                        "Zanahoria"
+                    ]
+                }
+            ]
+        }
+    },
+    "nivelCuatro": {
+        "fuerza": {
+            "platos": [
+                {
+                    "nombre": "Verduras al estilo goron",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Zanahoria",
+                        "Arroz de Hyrule",
+                        "Especias Goron",
+                        "Caña de azucar",
+                        "Halita"
+                    ]
+                },
+                {
+                    "nombre": "Manzanas a la mantequilla",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Mantequilla",
+                        "Manzana"
+                    ]
+                },
+                {
+                    "nombre": "Pastel de zanahoria",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Zanahoria",
+                        "Trigo de Tabanta",
+                        "Leche",
+                        "Mantequilla",
+                        "Caña de azucar"
+                    ]
+                }
+            ]
+        },
+        "velocidad": {
+            "platos": [
+                {
+                    "nombre": "Omelet Vegetal",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Zanahoria",
+                        "Huevo",
+                        "Mantequilla",
+                        "halita"
+                    ]
+                },
+                {
+                    "nombre": "Sopa de Verduras",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Zanahoria",
+                        "Leche",
+                        "Halita",
+                        "Calabaza"
+                    ]
+                },
+                {
+                    "nombre": "Pay de manzana",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Leche",
+                        "Trigo de Tabanta",
+                        "Caña de azucar",
+                        "Manzana",
+                        "Mantequilla"
+                    ]
+                }
+            ]
+        },
+        "resistencia": {
+            "platos": [
+                {
+                    "nombre": "Arroz con calabaza",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Arroz de Hyrule",
+                        "Calabaza",
+                        "Halita",
+                        "Mantequilla"
+                    ]
+                },
+                {
+                    "nombre": "Guiso de zanahoria",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Zanahoria",
+                        "Mantequilla",
+                        "Leche",
+                        "Trigo de Tabanta"
+                    ]
+                },
+                {
+                    "nombre": "crema de verduras",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Hierba de Hyrule",
+                        "Leche",
+                        "Halita"
+                    ]
+                }
+            ]
+        },
+        "fuerzaDeTiro": {
+            "platos": [
+                {
+                    "nombre": "Manzanas a la mantequilla",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Mantequilla",
+                        "Manzana"
+                    ]
+                },
+                {
+                    "nombre": "Guiso de zanahoria",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Zanahoria",
+                        "Mantequilla",
+                        "Leche",
+                        "Trigo de Tabanta"
+                    ]
+                },
+                {
+                    "nombre": "Sopa de Verduras",
+                    "cantidad": 3,
+                    "ingredientes": [
+                        "Zanahoria",
+                        "Leche",
+                        "Halita",
+                        "Calabaza"
+                    ]
+                }
+            ]
+        }
+    }
+}
