@@ -1,27 +1,119 @@
-# RecetarioApp
+# 🍳 Recetario App - Cocina de Hyrule
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
+Una aplicación web interactiva desarrollada en Angular que presenta un completo recetario de cocina basado en el universo de The Legend of Zelda. Explora recetas organizadas por niveles de habilidad y categorías de efectos.
 
-## Development server
+## 🌟 Características
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Navegación por niveles**: Organización de recetas por dificultad (Nivel 2, 3, 4 y 5)
+- **Categorías de efectos**: Recetas clasificadas por beneficios (fuerza, velocidad, resistencia, sigilo, etc.)
+- **Interfaz responsive**: Diseño adaptable construido con Angular Material y Bootstrap
+- **Datos estructurados**: Información detallada de ingredientes y efectos para cada receta
 
-## Code scaffolding
+## 🚀 Demo en vivo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Visita la aplicación desplegada en GitHub Pages: [https://yamicueto.github.io/recetario-app/](https://yamicueto.github.io/recetario-app/)
 
-## Build
+## 🛠️ Tecnologías utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular 18** - Framework principal
+- **Angular Material** - Componentes UI
+- **Bootstrap 5** - Estilos y responsive design
+- **TypeScript** - Lenguaje de programación
+- **GitHub Pages** - Hosting y despliegue
 
-## Running unit tests
+## 🏗️ Instalación y desarrollo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Prerrequisitos
 
-## Running end-to-end tests
+- Node.js (versión 18 o superior)
+- npm o yarn
+- Angular CLI
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Configuración del proyecto
 
-## Further help
+1. **Clonar el repositorio**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   ```bash
+   git clone https://github.com/YamiCueto/recetario-app.git
+   cd recetario-app
+   ```
+
+2. **Instalar dependencias**
+
+   ```bash
+   npm install
+   ```
+
+3. **Ejecutar en modo desarrollo**
+
+   ```bash
+   npm start
+   ```
+
+   Navega a `http://localhost:4200/` para ver la aplicación en acción.
+
+## 📦 Construcción y despliegue
+
+### Construcción para producción
+
+```bash
+npm run build
+```
+
+Los archivos generados se almacenarán en el directorio `dist/`.
+
+### Despliegue en GitHub Pages
+
+```bash
+npm run deploy
+```
+
+## 🧪 Testing
+
+### Ejecutar pruebas unitarias
+
+```bash
+npm test
+```
+
+### Ejecutar con coverage
+
+```bash
+npm run test:coverage
+```
+
+## 📁 Estructura del proyecto
+
+```text
+src/
+├── app/
+│   ├── niveles/          # Componente de selección de niveles
+│   ├── recetas/          # Componente de visualización de recetas
+│   ├── recetas.service.ts # Servicio para manejo de datos
+│   └── app-routing.module.ts # Configuración de rutas
+├── assets/
+│   └── recetas.json      # Base de datos de recetas
+└── styles.css            # Estilos globales
+```
+
+## 🤝 Contribuciones
+
+¡Las contribuciones son bienvenidas! Por favor:
+
+1. Haz fork del proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`)
+3. Commit tus cambios (`git commit -m 'Agrega nueva funcionalidad'`)
+4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
+5. Abre un Pull Request
+
+## 📝 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+
+## 👨‍💻 Autor
+
+**Yami Cueto** - [GitHub](https://github.com/YamiCueto)
+
+---
+
+⭐ ¡No olvides dar una estrella si este proyecto te fue útil!
