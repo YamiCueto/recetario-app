@@ -32,7 +32,7 @@ jobs:
       run: npm ci
 
     - name: Build
-      run: npm run build:prod
+      run: ng build --configuration=production --base-href /recetario-app/
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
@@ -40,7 +40,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./dist/recetario-app
+        path: ./dist/recetario-app/browser
 
   deploy:
     environment:

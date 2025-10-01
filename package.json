@@ -5,11 +5,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --configuration=production",
+    "build:prod": "ng build --configuration=production --base-href /recetario-app/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:coverage": "ng test --code-coverage",
-    "deploy": "ng build --configuration=production --base-href /recetario-app/ && npx angular-cli-ghpages --dir=dist/recetario-app"
+    "deploy": "ng build --configuration=production --base-href /recetario-app/ && npx angular-cli-ghpages --dir=dist/recetario-app/browser"
   },
   "private": true,
   "dependencies": {
