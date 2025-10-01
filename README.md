@@ -13,6 +13,8 @@ Una aplicación web interactiva desarrollada en Angular que presenta un completo
 
 Visita la aplicación desplegada en GitHub Pages: [https://yamicueto.github.io/recetario-app/](https://yamicueto.github.io/recetario-app/)
 
+> **Nota**: La aplicación se despliega automáticamente desde la rama `main` usando GitHub Actions.
+
 ## 🛠️ Tecnologías utilizadas
 
 - **Angular 18** - Framework principal
