@@ -22,9 +22,20 @@
   <meta property="twitter:description" content="Aplicación web interactiva con recetas de cocina basadas en el universo de The Legend of Zelda.">
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=MedievalSharp&family=Uncial+Antiqua&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>
+    <div class="app-loading">
+      <div class="loading-content">
+        <h1 class="loading-title">🍳 Recetario de Hyrule</h1>
+        <div class="loading-spinner"></div>
+        <p class="loading-text">Cargando...</p>
+      </div>
+    </div>
+  </app-root>
 </body>
 </html>

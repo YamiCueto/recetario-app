@@ -1,26 +1,67 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button routerLink="/">
-    <mat-icon>arrow_back_ios</mat-icon>
-  </button>
-  <span>Recetas de {{ nivelTitulo }}</span>
-</mat-toolbar>
-
-<div class="container" *ngIf="dataLoaded; else loading">
-  <div *ngFor="let categoria of categorias" class="categoria-section">
-    <h2 class="title">{{ categoria.categoria | titlecase }}</h2>
-    <mat-card *ngFor="let plato of categoria.platos" class="receta-card">
-      <mat-card-title>{{ plato.nombre }}</mat-card-title>
-      <mat-card-content>
-        <p><strong>Cantidad:</strong> {{ plato.cantidad }}</p>
-        <p><strong>Ingredientes:</strong></p>
-        <ul>
-          <li *ngFor="let ingrediente of plato.ingredientes">{{ ingrediente }}</li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
+<div class="recetas-wrapper">
+  <div class="page-header">
+    <button mat-fab color="primary" routerLink="/" class="back-button">
+      <mat-icon>arrow_back</mat-icon>
+    </button>
+    <div class="header-content">
+      <h2 class="page-title">🍽️ {{ nivelTitulo }}</h2>
+      <p class="page-description">Recetas organizadas por efectos y beneficios</p>
+    </div>
   </div>
-</div>
 
-<ng-template #loading>
-  <div class="loading">Cargando datos...</div>
-</ng-template>
+  <div class="recetas-content" *ngIf="dataLoaded; else loading">
+    <div *ngFor="let categoria of categorias; let i = index"
+         class="categoria-section fade-in-up"
+         [style.animation-delay]="(i * 0.1) + 's'">
+
+      <div class="categoria-header">
+        <div class="categoria-icon">{{ getCategoriaIcon(categoria.categoria) }}</div>
+        <h3 class="categoria-titulo">{{ categoria.categoria | titlecase }}</h3>
+        <div class="categoria-badge">{{ categoria.platos.length }} recetas</div>
+      </div>
+
+      <div class="recetas-grid">
+        <mat-card *ngFor="let plato of categoria.platos; let j = index"
+                  class="receta-card"
+                  [style.animation-delay]="((i * categoria.platos.length + j) * 0.05) + 's'">
+
+          <div class="card-header">
+            <mat-card-title class="receta-nombre">{{ plato.nombre }}</mat-card-title>
+            <div class="cantidad-badge">x{{ plato.cantidad }}</div>
+          </div>
+
+          <mat-card-content class="card-content">
+            <div class="ingredientes-section">
+              <h4 class="ingredientes-titulo">
+                <mat-icon>restaurant_menu</mat-icon>
+                Ingredientes
+              </h4>
+              <div class="ingredientes-grid">
+                <div *ngFor="let ingrediente of plato.ingredientes"
+                     class="ingrediente-item">
+                  <mat-icon class="ingrediente-icon">{{ getIngredienteIcon(ingrediente) }}</mat-icon>
+                  <span class="ingrediente-nombre">{{ ingrediente }}</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="efecto-section">
+              <div class="efecto-badge">
+                <mat-icon>{{ getEfectoIcon(categoria.categoria) }}</mat-icon>
+                <span>Efecto: {{ categoria.categoria | titlecase }}</span>
+              </div>
+            </div>
+          </mat-card-content>
+
+          <div class="card-gradient"></div>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #loading>
+    <div class="loading">
+      <span>Preparando recetas deliciosas...</span>
+    </div>
+  </ng-template>
+</div>
