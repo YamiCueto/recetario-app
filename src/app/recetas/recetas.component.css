@@ -257,3 +257,96 @@
     text-align: center;
   }
 }
+
+/* Nuevos estilos para las características expandidas */
+.categoria-descripcion {
+  background: rgba(var(--primary-rgb), 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: var(--text-color);
+  border-left: 4px solid var(--primary-color);
+}
+
+.descripcion-section {
+  margin-bottom: 1.5rem;
+}
+
+.plato-descripcion {
+  font-style: italic;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+  background: rgba(var(--secondary-rgb), 0.1);
+  padding: 0.75rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--secondary-color);
+}
+
+.estadisticas-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.05), rgba(var(--secondary-rgb), 0.05));
+  border-radius: 8px;
+  border: 1px solid rgba(var(--primary-rgb), 0.1);
+}
+
+.estadistica-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0.25rem 0;
+}
+
+.estadistica-label {
+  font-weight: 600;
+  color: var(--text-color);
+  min-width: 70px;
+}
+
+.estadistica-valor {
+  color: var(--primary-color);
+  font-weight: 500;
+  flex: 1;
+}
+
+.efecto-icon {
+  color: var(--primary-color) !important;
+  font-size: 1.2rem !important;
+}
+
+.corazones-icon {
+  color: #e74c3c !important;
+  font-size: 1.2rem !important;
+}
+
+.duracion-icon {
+  color: var(--secondary-color) !important;
+  font-size: 1.2rem !important;
+}
+
+/* Mejoras responsivas para las nuevas secciones */
+@media (max-width: 768px) {
+  .estadisticas-section {
+    padding: 0.75rem;
+  }
+
+  .estadistica-item {
+    font-size: 0.85rem;
+  }
+
+  .categoria-descripcion {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  .plato-descripcion {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+}

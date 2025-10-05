@@ -20,6 +20,11 @@
         <div class="categoria-badge">{{ categoria.platos.length }} recetas</div>
       </div>
 
+      <!-- Mostrar descripción de la categoría si existe -->
+      <div *ngIf="categoria.descripcion" class="categoria-descripcion">
+        {{ categoria.descripcion }}
+      </div>
+
       <div class="recetas-grid">
         <mat-card *ngFor="let plato of categoria.platos; let j = index"
                   class="receta-card"
@@ -27,10 +32,36 @@
 
           <div class="card-header">
             <mat-card-title class="receta-nombre">{{ plato.nombre }}</mat-card-title>
-            <div class="cantidad-badge">x{{ plato.cantidad }}</div>
+            <div class="cantidad-badge" *ngIf="plato.cantidad">x{{ plato.cantidad }}</div>
           </div>
 
           <mat-card-content class="card-content">
+            <!-- Descripción del plato -->
+            <div *ngIf="plato.descripcion" class="descripcion-section">
+              <p class="plato-descripcion">{{ plato.descripcion }}</p>
+            </div>
+
+            <!-- Información de efectos y estadísticas -->
+            <div class="estadisticas-section" *ngIf="plato.efecto || plato.corazones || plato.duracion">
+              <div class="estadistica-item" *ngIf="plato.efecto">
+                <mat-icon class="efecto-icon">{{ getEfectoIcon(categoria.categoria) }}</mat-icon>
+                <span class="estadistica-label">Efecto:</span>
+                <span class="estadistica-valor">{{ plato.efecto }}</span>
+              </div>
+
+              <div class="estadistica-item" *ngIf="plato.corazones">
+                <mat-icon class="corazones-icon">favorite</mat-icon>
+                <span class="estadistica-label">Corazones:</span>
+                <span class="estadistica-valor">{{ plato.corazones }}</span>
+              </div>
+
+              <div class="estadistica-item" *ngIf="plato.duracion && plato.duracion !== 'N/A'">
+                <mat-icon class="duracion-icon">schedule</mat-icon>
+                <span class="estadistica-label">Duración:</span>
+                <span class="estadistica-valor">{{ plato.duracion }}</span>
+              </div>
+            </div>
+
             <div class="ingredientes-section">
               <h4 class="ingredientes-titulo">
                 <mat-icon>restaurant_menu</mat-icon>
@@ -42,13 +73,6 @@
                   <mat-icon class="ingrediente-icon">{{ getIngredienteIcon(ingrediente) }}</mat-icon>
                   <span class="ingrediente-nombre">{{ ingrediente }}</span>
                 </div>
-              </div>
-            </div>
-
-            <div class="efecto-section">
-              <div class="efecto-badge">
-                <mat-icon>{{ getEfectoIcon(categoria.categoria) }}</mat-icon>
-                <span>Efecto: {{ categoria.categoria | titlecase }}</span>
               </div>
             </div>
           </mat-card-content>

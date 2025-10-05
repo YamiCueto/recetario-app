@@ -13,13 +13,14 @@ export class RecetasService {
     return this.http.get(this.jsonUrl);
   }
 
-  getCategoriasPorNivel(data: any, nivel: string): { categoria: string; platos: any[] }[] {
+  getCategoriasPorNivel(data: any, nivel: string): { categoria: string; platos: any[]; descripcion?: string }[] {
     if (!data[nivel]) {
       return [];
     }
     return Object.keys(data[nivel]).map(categoria => ({
       categoria,
-      platos: data[nivel][categoria].platos
+      platos: data[nivel][categoria].platos,
+      descripcion: data[nivel][categoria].descripcion
     }));
   }
 }

@@ -1,15 +1,14 @@
 {
     "nivelDos": {
         "vivaz": {
-            "descripcion": "Recetas que restauran corazones",
+            "descripcion": "Recetas que aumentan los corazones temporalmente",
             "platos": [
                 {
                     "nombre": "Sopa de verduras",
                     "descripcion": "Para que esta sopa cremosa adquiera su característico sabor dulce, hay que cocer las verduras a fuego lento y así realzar el dulzor.",
-                    "efecto": "Restaura 2 corazones",
+                    "efecto": "Rellena dos corazones",
                     "corazones": 2,
                     "duracion": "N/A",
-                    "cantidad": 1,
                     "ingredientes": [
                         "Leche fresca",
                         "Halita",
@@ -19,10 +18,9 @@
                 {
                     "nombre": "Manzanas a la mantequilla",
                     "descripcion": "La manzana horneada le da a este postre su toque dulce y la manteca de cabra caliente, la textura suave.",
-                    "efecto": "Restaura 2 corazones",
+                    "efecto": "Rellena dos corazones",
                     "corazones": 2,
                     "duracion": "N/A",
-                    "cantidad": 1,
                     "ingredientes": [
                         "Manzana",
                         "Manteca de cabra"
@@ -31,57 +29,36 @@
                 {
                     "nombre": "Arroz con huevo frito",
                     "descripcion": "Un plato humilde a la par que delicioso en el que la yema del huevo combina a las mil maravillas con el arroz recién hecho.",
-                    "efecto": "Restaura 7 corazones",
+                    "efecto": "Rellena siete corazones",
                     "corazones": 7,
                     "duracion": "N/A",
-                    "cantidad": 1,
                     "ingredientes": [
                         "Arroz de Hyrule",
                         "Huevo de ave"
                     ]
-                }
-            ]
-        },
-        "velocidad": {
-            "descripcion": "Recetas que aumentan temporalmente la velocidad",
-            "platos": [
-                {
-                    "nombre": "Verduras a la parrilla",
-                    "descripcion": "Un plato de lo más sano, a base de verduras y plantas diversas.",
-                    "efecto": "Velocidad aumentada",
-                    "corazones": 1,
-                    "duracion": "1:00",
-                    "cantidad": 1,
-                    "ingredientes": [
-                        "Zanahoria rauda",
-                        "Halita"
-                    ]
                 },
                 {
-                    "nombre": "Salteado de montaña",
-                    "descripcion": "Un sencillo plato muy ligero a base de plantas salvajes salteadas.",
-                    "efecto": "Velocidad aumentada",
-                    "corazones": 2,
-                    "duracion": "2:50",
-                    "cantidad": 1,
+                    "nombre": "Rábano vivaz asado",
+                    "descripcion": "Aún está caliente y desprende un aroma agradable. Este rábano vivaz no otorga ningún efecto especial, pero te regenera parte de la energía vital.",
+                    "efecto": "Rellena tres corazones y tres cuartos",
+                    "corazones": 3.75,
+                    "duracion": "N/A",
                     "ingredientes": [
-                        "Semilla de loto rauda",
-                        "Zanahoria rauda",
-                        "Hierba de Hyrule"
+                        "Rábano vivaz"
                     ]
                 }
             ]
         },
-        "fuerza": {
+        "recio": {
             "descripcion": "Recetas que aumentan temporalmente el ataque",
             "platos": [
                 {
                     "nombre": "Carne a la parrilla",
                     "descripcion": "Un plato sencillo que potencia al máximo el sabor de la carne con ayuda de la sal.",
-                    "efecto": "Ataque potenciado",
+                    "efecto": "Rellena dos corazones + Ataque potenciado",
                     "corazones": 2,
                     "duracion": "2:30",
-                    "cantidad": 1,
+                    "nivel_efecto": 1,
                     "ingredientes": [
                         "Carne de caza",
                         "Halita"
@@ -93,15 +70,58 @@
                     "efecto": "Ataque potenciado",
                     "corazones": 0,
                     "duracion": "4:30",
-                    "cantidad": 1,
+                    "nivel_efecto": 1,
                     "ingredientes": [
                         "Carne de caza",
                         "Carne de ave"
                     ]
+                },
+                {
+                    "nombre": "Arroz especiado con carne",
+                    "descripcion": "La intensidad de las especias extrae el mejor sabor de la gran porción de carne que se requiere para este plato.",
+                    "efecto": "Rellena cuatro corazones + Ataque potenciado",
+                    "corazones": 4,
+                    "duracion": "3:30",
+                    "nivel_efecto": 1,
+                    "ingredientes": [
+                        "Arroz de Hyrule",
+                        "Carne de caza",
+                        "Especias goron"
+                    ]
                 }
             ]
         },
-        "resistencia": {
+        "raudo": {
+            "descripcion": "Recetas que aumentan temporalmente la velocidad",
+            "platos": [
+                {
+                    "nombre": "Verduras a la parrilla",
+                    "descripcion": "Un plato de lo más sano, a base de verduras y plantas diversas.",
+                    "efecto": "Velocidad aumentada",
+                    "corazones": 1,
+                    "duracion": "1:00",
+                    "nivel_efecto": 1,
+                    "ingredientes": [
+                        "Zanahoria rauda",
+                        "Halita"
+                    ]
+                },
+                {
+                    "nombre": "Salteado de montaña",
+                    "descripcion": "Un sencillo plato muy ligero a base de plantas salvajes salteadas.",
+                    "efecto": "Velocidad aumentada",
+                    "corazones": 2,
+                    "duracion": "2:50",
+                    "nivel_efecto": 1,
+                    "ingredientes": [
+                        "Semilla de loto rauda",
+                        "Zanahoria rauda",
+                        "Hierba de Hyrule"
+                    ]
+                }
+            ]
+        },
+        "tonificante": {
             "descripcion": "Recetas que aumentan temporalmente la resistencia",
             "platos": [
                 {
@@ -110,7 +130,7 @@
                     "efecto": "Resistencia aumentada",
                     "corazones": 3,
                     "duracion": "3:20",
-                    "cantidad": 1,
+                    "nivel_efecto": 1,
                     "ingredientes": [
                         "Calabaza robusta",
                         "Zanahoria",
@@ -121,10 +141,10 @@
                 {
                     "nombre": "Arroz con verduras",
                     "descripcion": "El sabor dulce de las verduras aporta su toque distintivo al arroz para crear un plato ligero que incluso los niños disfrutan.",
-                    "efecto": "Resistencia aumentada",
+                    "efecto": "Rellena seis corazones + Resistencia aumentada",
                     "corazones": 6,
                     "duracion": "4:10",
-                    "cantidad": 1,
+                    "nivel_efecto": 1,
                     "ingredientes": [
                         "Arroz de Hyrule",
                         "Manteca de cabra",
@@ -142,10 +162,9 @@
                 {
                     "nombre": "Arroz con salmón",
                     "descripcion": "Las notas inconfundibles del salmón vivaz aportan un gran sabor al arroz de Hyrule.",
-                    "efecto": "Restaura todos los corazones + 4 extra",
+                    "efecto": "Rellena todos los corazones y añade 4 extra",
                     "corazones": "MAX + 4",
                     "duracion": "N/A",
-                    "cantidad": 1,
                     "ingredientes": [
                         "Arroz de Hyrule",
                         "Manteca de cabra",
@@ -156,10 +175,9 @@
                 {
                     "nombre": "Arroz con marisco",
                     "descripcion": "Cualquier pescador que se precie celebra las grandes ocasiones con este exótico arroz con un toque marinero.",
-                    "efecto": "Restaura 15 corazones",
+                    "efecto": "Rellena quince corazones",
                     "corazones": 15,
                     "duracion": "N/A",
-                    "cantidad": 1,
                     "ingredientes": [
                         "Arroz de Hyrule",
                         "Caracol vivaz",
@@ -171,26 +189,26 @@
                 {
                     "nombre": "Durián vivaz asado",
                     "descripcion": "Las llamas no han acabado con el peculiar olor de este durián vivaz, pero han logrado atravesar su cáscara hasta asar el interior.",
-                    "efecto": "Corazones temporales",
+                    "efecto": "Rellena cuatro corazones y medio + Corazones temporales",
                     "corazones": 4.5,
                     "duracion": "8:30",
-                    "cantidad": 1,
+                    "nivel_efecto": 2,
                     "ingredientes": [
                         "Durián vivaz"
                     ]
                 }
             ]
         },
-        "fuerza": {
+        "recio": {
             "descripcion": "Recetas de ataque nivel intermedio",
             "platos": [
                 {
                     "nombre": "Carne a la parrilla XL",
                     "descripcion": "Un delicioso plato a base de carne de calidad al punto de sal.",
-                    "efecto": "Ataque potenciado alto",
+                    "efecto": "Rellena tres corazones + Ataque potenciado",
                     "corazones": 3,
                     "duracion": "4:30",
-                    "cantidad": 1,
+                    "nivel_efecto": 2,
                     "ingredientes": [
                         "Carne de caza XL",
                         "Halita"
@@ -199,10 +217,10 @@
                 {
                     "nombre": "Arroz especiado con carne XL",
                     "descripcion": "Este plato tiene un sabor más profundo e intenso, gracias a la carne de primera calidad que es su ingrediente principal.",
-                    "efecto": "Ataque potenciado alto",
+                    "efecto": "Rellena cinco corazones + Ataque potenciado",
                     "corazones": 5,
                     "duracion": "6:30",
-                    "cantidad": 1,
+                    "nivel_efecto": 2,
                     "ingredientes": [
                         "Arroz de Hyrule",
                         "Carne de caza XL",
@@ -212,10 +230,10 @@
                 {
                     "nombre": "Brochetas de carne variada",
                     "descripcion": "Un plato exquisito con distintas carnes a la parrilla. Sacia bastante y conviene tomarlo con el estómago vacío.",
-                    "efecto": "Ataque supremo",
+                    "efecto": "Ataque potenciado alto",
                     "corazones": 8,
                     "duracion": "10:30",
-                    "cantidad": 1,
+                    "nivel_efecto": 3,
                     "ingredientes": [
                         "Carne de caza",
                         "Carne de ave",
@@ -225,16 +243,16 @@
                 }
             ]
         },
-        "velocidad": {
+        "raudo": {
             "descripcion": "Recetas de velocidad nivel intermedio",
             "platos": [
                 {
                     "nombre": "Salteado de montaña variado",
                     "descripcion": "Un plato muy sano a base de plantas de las montañas cocinadas a fuego fuerte.",
-                    "efecto": "Velocidad aumentada alta",
+                    "efecto": "Velocidad aumentada",
                     "corazones": 4,
                     "duracion": "5:50",
-                    "cantidad": 1,
+                    "nivel_efecto": 2,
                     "ingredientes": [
                         "Zanahoria rauda",
                         "Semilla de loto rauda",
@@ -248,7 +266,7 @@
                     "efecto": "Velocidad aumentada + Corazones",
                     "corazones": 6,
                     "duracion": "7:20",
-                    "cantidad": 1,
+                    "nivel_efecto": 2,
                     "ingredientes": [
                         "Zanahoria rauda",
                         "Miel de vigor",
@@ -257,7 +275,7 @@
                 }
             ]
         },
-        "resistencia": {
+        "protector": {
             "descripcion": "Recetas que aumentan temporalmente la defensa",
             "platos": [
                 {
@@ -266,7 +284,7 @@
                     "efecto": "Defensa aumentada",
                     "corazones": 3,
                     "duracion": "4:30",
-                    "cantidad": 1,
+                    "nivel_efecto": 1,
                     "ingredientes": [
                         "Seta robusta",
                         "Halita"
@@ -275,10 +293,10 @@
                 {
                     "nombre": "Brocheta de setas",
                     "descripcion": "Brocheta asada en la que se aprecia mejor el suave sabor de las setas. La colorida presentación la hace aún más apetecible.",
-                    "efecto": "Defensa aumentada alta",
+                    "efecto": "Defensa aumentada",
                     "corazones": 5,
                     "duracion": "8:50",
-                    "cantidad": 1,
+                    "nivel_efecto": 2,
                     "ingredientes": [
                         "Seta robusta",
                         "Seta de Hyrule",
@@ -295,10 +313,10 @@
                 {
                     "nombre": "Rábano vivaz grande asado",
                     "descripcion": "Un rábano vivaz grande cocinado. Es una pena que al asarlo haya perdido parte de sus propiedades.",
-                    "efecto": "Corazones temporales grandes",
+                    "efecto": "Rellena seis corazones + Corazones temporales",
                     "corazones": 6,
                     "duracion": "12:30",
-                    "cantidad": 1,
+                    "nivel_efecto": 3,
                     "ingredientes": [
                         "Rábano vivaz grande"
                     ]
@@ -306,10 +324,10 @@
                 {
                     "nombre": "Trufa vivaz asada",
                     "descripcion": "Una trufa vivaz cocinada y crujiente. Posee un sabor increíble.",
-                    "efecto": "Corazones temporales",
+                    "efecto": "Rellena tres corazones + Corazones temporales",
                     "corazones": 3,
                     "duracion": "6:40",
-                    "cantidad": 1,
+                    "nivel_efecto": 2,
                     "ingredientes": [
                         "Trufa vivaz"
                     ]
@@ -317,26 +335,26 @@
                 {
                     "nombre": "Trufón vivaz asado",
                     "descripcion": "Bien tostado, el trufón vivaz destaca tanto por su sabor como por su valor nutricional.",
-                    "efecto": "Corazones temporales supremos",
+                    "efecto": "Rellena cuatro corazones y medio + Corazones temporales",
                     "corazones": 4.5,
                     "duracion": "15:00",
-                    "cantidad": 1,
+                    "nivel_efecto": 4,
                     "ingredientes": [
                         "Trufón vivaz"
                     ]
                 }
             ]
         },
-        "fuerza": {
+        "recio": {
             "descripcion": "Recetas de ataque de alto nivel",
             "platos": [
                 {
                     "nombre": "Carne a la parrilla XXL",
                     "descripcion": "Un plato más que delicioso a base de carne a la parrilla de primera calidad y con el punto justo de sal.",
-                    "efecto": "Ataque supremo",
+                    "efecto": "Rellena seis corazones + Ataque muy potenciado",
                     "corazones": 6,
                     "duracion": "10:30",
-                    "cantidad": 1,
+                    "nivel_efecto": 3,
                     "ingredientes": [
                         "Carne de caza XXL",
                         "Halita"
@@ -345,10 +363,10 @@
                 {
                     "nombre": "Arroz especiado con carne XXL",
                     "descripcion": "Este plato, que requiere una gran porción de carne de primerísima calidad, es ideal para los amantes de los filetes y las especias.",
-                    "efecto": "Ataque supremo + Corazones",
+                    "efecto": "Rellena ocho corazones + Ataque muy potenciado",
                     "corazones": 8,
                     "duracion": "12:30",
-                    "cantidad": 1,
+                    "nivel_efecto": 3,
                     "ingredientes": [
                         "Arroz de Hyrule",
                         "Carne de caza XXL",
@@ -358,10 +376,10 @@
                 {
                     "nombre": "Carne con pescado XXL",
                     "descripcion": "Esta receta combina carne y pescado de la mejor calidad. El resultado es exquisito y no deja con hambre a nadie.",
-                    "efecto": "Ataque alto + Corazones",
+                    "efecto": "Rellena ocho corazones + Ataque potenciado",
                     "corazones": 8,
                     "duracion": "8:30",
-                    "cantidad": 1,
+                    "nivel_efecto": 2,
                     "ingredientes": [
                         "Carne de caza XXL",
                         "Salmón vivaz"
@@ -369,192 +387,203 @@
                 }
             ]
         },
-        "velocidad": {
-            "descripcion": "Recetas de velocidad suprema",
+        "gélido": {
+            "descripcion": "Recetas que otorgan resistencia al calor",
             "platos": [
                 {
-                    "nombre": "Omelet Vegetal",
-                    "descripcion": "Un omelet suave y esponjoso con verduras frescas que proporciona energía duradera.",
-                    "efecto": "Velocidad suprema",
-                    "corazones": 3,
-                    "duracion": "8:30",
-                    "cantidad": 1,
+                    "nombre": "Carne helada",
+                    "descripcion": "Aunque es difícil de masticar, es posible hincarle el diente. Mejora brevemente tu resistencia al calor.",
+                    "efecto": "Resistencia al calor",
+                    "corazones": 1,
+                    "duracion": "2:30",
+                    "nivel_efecto": 1,
                     "ingredientes": [
-                        "Zanahoria rauda",
-                        "Huevo",
-                        "Manteca de cabra",
-                        "Halita"
+                        "Carne de caza",
+                        "Sandía gélida"
                     ]
                 },
                 {
-                    "nombre": "Pay de manzana",
-                    "descripcion": "Un delicioso pay casero que combina la dulzura de las manzanas con una masa perfectamente horneada.",
-                    "efecto": "Velocidad alta + Recuperación",
-                    "corazones": 8,
-                    "duracion": "12:00",
-                    "cantidad": 1,
+                    "nombre": "Pescado helado",
+                    "descripcion": "Refrigerio idóneo en travesías por regiones cálidas como el Desierto de Gerudo.",
+                    "efecto": "Resistencia al calor",
+                    "corazones": 2,
+                    "duracion": "5:20",
+                    "nivel_efecto": 2,
                     "ingredientes": [
-                        "Leche fresca",
-                        "Trigo de Tabanta",
-                        "Caña de azúcar",
-                        "Manzana",
-                        "Manteca de cabra"
+                        "Dorada recia",
+                        "Seta gélida"
                     ]
                 }
             ]
         },
-        "resistencia": {
-            "descripcion": "Recetas de defensa suprema",
+        "picante": {
+            "descripcion": "Recetas que otorgan resistencia al frío",
             "platos": [
                 {
-                    "nombre": "Arroz con calabaza",
-                    "descripcion": "Un plato reconfortante que combina el arroz con la cremosidad de la calabaza cocida.",
-                    "efecto": "Defensa alta + Recuperación",
-                    "corazones": 6,
-                    "duracion": "10:00",
-                    "cantidad": 1,
+                    "nombre": "Verduras picantes",
+                    "descripcion": "Un plato caliente que ayuda a combatir el frío de las montañas.",
+                    "efecto": "Resistencia al frío",
+                    "corazones": 3,
+                    "duracion": "6:30",
+                    "nivel_efecto": 2,
                     "ingredientes": [
-                        "Arroz de Hyrule",
-                        "Calabaza robusta",
-                        "Halita",
-                        "Manteca de cabra"
+                        "Baya ígnea",
+                        "Seta ígnea",
+                        "Especias goron"
                     ]
                 },
                 {
-                    "nombre": "Guiso de zanahoria",
-                    "descripcion": "Un guiso espeso y nutritivo que calienta el cuerpo y fortalece las defensas.",
-                    "efecto": "Defensa suprema",
-                    "corazones": 7,
-                    "duracion": "15:00",
-                    "cantidad": 1,
+                    "nombre": "Sopa picante",
+                    "descripcion": "Una sopa ardiente que calienta el cuerpo desde adentro.",
+                    "efecto": "Resistencia al frío alta",
+                    "corazones": 4,
+                    "duracion": "12:30",
+                    "nivel_efecto": 3,
                     "ingredientes": [
-                        "Zanahoria",
-                        "Manteca de cabra",
+                        "Baya ígnea",
                         "Leche fresca",
-                        "Trigo de Tabanta"
-                    ]
-                },
-                {
-                    "nombre": "Crema de verduras",
-                    "descripcion": "Una crema suave y deliciosa que combina las mejores verduras de Hyrule.",
-                    "efecto": "Defensa + Recuperación",
-                    "corazones": 5,
-                    "duracion": "8:00",
-                    "cantidad": 1,
-                    "ingredientes": [
-                        "Hierba de Hyrule",
-                        "Leche fresca",
+                        "Especias goron",
                         "Halita"
                     ]
+                }
+            ]
         }
-      ]
-    }
-  },
-  "nivelCinco": {
-    "vivaz": {
-      "descripcion": "Recetas maestras que otorgan el máximo de corazones temporales",
-      "platos": [
-        {
-          "nombre": "Elixir de la vida eterna",
-          "descripcion": "La receta más poderosa para restaurar y aumentar la energía vital al máximo.",
-          "efecto": "Restaura todos los corazones + 8 temporales",
-          "corazones": "MAX + 8",
-          "duracion": "30:00",
-          "cantidad": 1,
-          "ingredientes": [
-            "Durián vivaz",
-            "Trufón vivaz",
-            "Rábano vivaz grande",
-            "Caracol vivaz",
-            "Hada"
-          ]
-        },
-        {
-          "nombre": "Banquete real de Hyrule",
-          "descripcion": "Un festín digno de la realeza que combina los mejores ingredientes del reino.",
-          "efecto": "Restaura 20 corazones + Temporales",
-          "corazones": 20,
-          "duracion": "25:00",
-          "cantidad": 1,
-          "ingredientes": [
-            "Salmón vivaz",
-            "Arroz de Hyrule",
-            "Trufa vivaz",
-            "Manteca de cabra",
-            "Miel de vigor"
-          ]
-        }
-      ]
     },
-    "fuerza": {
-      "descripcion": "Recetas de ataque supremas",
-      "platos": [
-        {
-          "nombre": "Festín del guerrero supremo",
-          "descripcion": "El plato definitivo para aquellos que buscan el poder máximo en combate.",
-          "efecto": "Ataque supremo",
-          "corazones": 12,
-          "duracion": "30:00",
-          "cantidad": 1,
-          "ingredientes": [
-            "Carne de caza XXL",
-            "Carne de ave XXL",
-            "Especias goron",
-            "Plátanos recios",
-            "Arroz de Hyrule"
-          ]
+    "nivelCinco": {
+        "vivaz": {
+            "descripcion": "Recetas maestras que otorgan el máximo de corazones temporales",
+            "platos": [
+                {
+                    "nombre": "Elixir de la vida eterna",
+                    "descripcion": "La receta más poderosa para restaurar y aumentar la energía vital al máximo.",
+                    "efecto": "Rellena todos los corazones + 8 corazones temporales",
+                    "corazones": "MAX + 8",
+                    "duracion": "30:00",
+                    "nivel_efecto": 5,
+                    "ingredientes": [
+                        "Durián vivaz",
+                        "Trufón vivaz",
+                        "Rábano vivaz grande",
+                        "Caracol vivaz",
+                        "Hada"
+                    ]
+                },
+                {
+                    "nombre": "Banquete real de Hyrule",
+                    "descripcion": "Un festín digno de la realeza que combina los mejores ingredientes del reino.",
+                    "efecto": "Rellena 20 corazones + Corazones temporales",
+                    "corazones": 20,
+                    "duracion": "25:00",
+                    "nivel_efecto": 4,
+                    "ingredientes": [
+                        "Salmón vivaz",
+                        "Arroz de Hyrule",
+                        "Trufa vivaz",
+                        "Manteca de cabra",
+                        "Miel de vigor"
+                    ]
+                }
+            ]
         },
-        {
-          "nombre": "Brocheta de dragón",
-          "descripcion": "Una brocheta legendaria que despierta el poder del dragón interior.",
-          "efecto": "Ataque de dragón",
-          "corazones": 15,
-          "duracion": "30:00",
-          "cantidad": 1,
-          "ingredientes": [
-            "Carne de caza XXL",
-            "Plátanos recios",
-            "Especias goron",
-            "Seta recia",
-            "Halita"
-          ]
+        "recio": {
+            "descripcion": "Recetas de ataque supremas",
+            "platos": [
+                {
+                    "nombre": "Festín del guerrero supremo",
+                    "descripcion": "El plato definitivo para aquellos que buscan el poder máximo en combate.",
+                    "efecto": "Ataque supremo",
+                    "corazones": 12,
+                    "duracion": "30:00",
+                    "nivel_efecto": 5,
+                    "ingredientes": [
+                        "Carne de caza XXL",
+                        "Carne de ave XXL",
+                        "Especias goron",
+                        "Plátanos recios",
+                        "Arroz de Hyrule"
+                    ]
+                },
+                {
+                    "nombre": "Brocheta de dragón",
+                    "descripción": "Una brocheta legendaria que despierta el poder del dragón interior.",
+                    "efecto": "Ataque de dragón",
+                    "corazones": 15,
+                    "duracion": "30:00",
+                    "nivel_efecto": 5,
+                    "ingredientes": [
+                        "Carne de caza XXL",
+                        "Plátanos recios",
+                        "Especias goron",
+                        "Seta recia",
+                        "Halita"
+                    ]
+                }
+            ]
+        },
+        "maestro": {
+            "descripcion": "Recetas legendarias que combinan múltiples efectos",
+            "platos": [
+                {
+                    "nombre": "Ambrosía de los dioses",
+                    "descripcion": "La receta más legendaria, reservada solo para los héroes verdaderos.",
+                    "efecto": "Todos los efectos combinados",
+                    "corazones": "MAX + 5",
+                    "duracion": "30:00",
+                    "nivel_efecto": 5,
+                    "ingredientes": [
+                        "Durián vivaz",
+                        "Plátanos recios",
+                        "Zanahoria rauda",
+                        "Seta robusta",
+                        "Estrella de Nayru"
+                    ]
+                },
+                {
+                    "nombre": "Último regalo de Zelda",
+                    "descripcion": "Una receta secreta transmitida por la familia real de Hyrule a través de generaciones.",
+                    "efecto": "Bendición real",
+                    "corazones": 20,
+                    "duracion": "30:00",
+                    "nivel_efecto": 5,
+                    "ingredientes": [
+                        "Salmón vivaz",
+                        "Trufón vivaz",
+                        "Miel de vigor",
+                        "Leche fresca",
+                        "Flor sigilosa"
+                    ]
+                }
+            ]
         }
-      ]
     },
-    "maestro": {
-      "descripcion": "Recetas legendarias que combinan múltiples efectos",
-      "platos": [
-        {
-          "nombre": "Ambrosía de los dioses",
-          "descripcion": "La receta más legendaria, reservada solo para los héroes verdaderos.",
-          "efecto": "Todos los efectos combinados",
-          "corazones": "MAX + 5",
-          "duracion": "30:00",
-          "cantidad": 1,
-          "ingredientes": [
-            "Durián vivaz",
-            "Plátanos recios",
-            "Zanahoria rauda",
-            "Seta robusta",
-            "Estrella de Nayru"
-          ]
+    "informacion_adicional": {
+        "categorias_efectos": {
+            "vivaz": "Otorga corazones temporales adicionales",
+            "recio": "Aumenta temporalmente el poder de ataque",
+            "raudo": "Aumenta temporalmente la velocidad de movimiento",
+            "protector": "Aumenta temporalmente la defensa",
+            "tonificante": "Aumenta temporalmente la resistencia máxima",
+            "vigoroso": "Recupera resistencia más rápidamente",
+            "sigiloso": "Reduce el ruido al moverse",
+            "gélido": "Otorga resistencia al calor",
+            "picante": "Otorga resistencia al frío",
+            "electrizante": "Otorga resistencia a la electricidad",
+            "ignífugo": "Otorga resistencia al fuego",
+            "maestro": "Efectos especiales únicos"
         },
-        {
-          "nombre": "Último regalo de Zelda",
-          "descripcion": "Una receta secreta transmitida por la familia real de Hyrule a través de generaciones.",
-          "efecto": "Bendición real",
-          "corazones": 20,
-          "duracion": "30:00",
-          "cantidad": 1,
-          "ingredientes": [
-            "Salmón vivaz",
-            "Trufón vivaz",
-            "Miel de vigor",
-            "Leche fresca",
-            "Flor sigilosa"
-          ]
+        "consejos_cocina": [
+            "Usar ingredientes de la misma categoría aumenta el efecto",
+            "Mezclar categorías diferentes anula efectos especiales pero aumenta corazones",
+            "Los ingredientes asados recuperan 50% más corazones",
+            "Los ingredientes congelados otorgan resistencia al frío temporal",
+            "Agregar un hada aumenta significativamente la curación",
+            "El orden de los ingredientes puede afectar el resultado",
+            "Usar más ingredientes del mismo tipo aumenta duración y potencia"
+        ],
+        "ingredientes_especiales": {
+            "hada": "Mejora cualquier receta aumentando la curación",
+            "estrella_nayru": "Ingrediente legendario para recetas supremas",
+            "esencia_monstruo": "Crea platos únicos pero arriesgados"
         }
-      ]
     }
-  }
 }
